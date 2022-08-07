@@ -21,7 +21,8 @@ $(document).ready(function () {
 })
 
 $.get({
-  url: "https://jsonplaceholder.typicode.com/todos/1",
+  url: "https://jsonplaceholder.typicode.com/todos/1", // success case
+  //url: "https://jsonplaceholder.typicode.com/todos/-1", // error case
   success: data => {
     console.log("First success", data)
   },
